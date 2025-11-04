@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <script 
+      type="module" 
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+    </script>
+  </head>
+  <body>
+
+    <header class="header">
+
+      <a href="#home" class="logo">
+         Data <span>Byte</span>
+      </a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      
+      <button class="gradiant-button">Contact Me</button>
+
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+         <h1>Welcome to <span>Ziad's</span> Space</h1>
+         <h3>I'm a <span>Data Analyst</span></h3>
+         <p>
+            Based in <span>Egypt</span>, I'm blending technical expertise with a business mindset to
+            uncover trends, predict outcomes, and guide strategic decisions. So feel free to call me to transform your data into clear, impactful stories.
+         </p>
+
+         <div class="social-icons">
+            <a href="https://www.linkedin.com/in/ziad-abdallbasset" target="_blank" rel="noopener noreferrer">
+                <i class="bx bxl-linkedin-square"></i>
+            </a>
+
+         <a href="https://github.com/ZiadAbdallbasset1" target="_blank" rel="noopener noreferrer">
+               <i class="bx bxl-github"></i>
+         </a>
+
+         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ziadabdallbasset123@gmail.com" target="_blank" rel="noopener noreferrer">
+               <i class="bx bxl-gmail"></i>
+         </a>
+
+         <a href="https://wa.me/201101802846" target="_blank" rel="noopener noreferrer">
+               <i class="bx bxl-whatsapp"></i>
+         </a>
+      </div>
+
+
+         <div class="btn-group">
+            <a href="cv update final3.pdf" class="btn" target="_blank" rel="noopener noreferrer">See my CV</a>
+            <a href="#contact" class="btn">Contact</a>
+         </div>
+
+      </div>
+
+<!-- رائد فضاء 3D -->
+      <div class="home-img">
+         <div class="stars-bg"></div>
+         <model-viewer 
+            src="scene.gltf" 
+            alt="3D Astronaut"
+            auto-rotate 
+            camera-controls
+            autoplay 
+            style="width: 400px; height: 400px;"
+            rotation-per-second="60deg"
+         ></model-viewer>
+
+    </div>
+
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-content">
+         <h2>About <span>Me</span></h2>
+      <div class="about-img">
+         <img src="phh.jpg" alt="">
+      </div>
+         <p>
+            I’m <strong>Ziad</strong>, a <strong>Data Analyst</strong> and a graduate of the 
+            <strong>Faculty of <span>Business</span> (English Section)</strong> at 
+            <strong>Ain Shams University</strong>.<br><br>
+
+            Driven by a passion for turning complex datasets into meaningful insights, 
+            I specialize in <strong>statistical analysis</strong> and 
+            <strong>data visualization</strong>.<br><br>
+
+            With proficiency in tools such as 
+            <strong>Excel</strong>, <strong>Power BI</strong>, 
+            <strong>Python</strong>, <strong>SQL</strong>, etc... ,
+            I transform raw data into clear, actionable insights that support 
+            strategic decision-making.<br><br>
+
+            I’m always eager to explore new technologies, solve challenging problems, 
+            and deliver data-driven solutions that make a real impact.
+         </p>
+         <a href="#" class="btn">Read More</a>
+      </div>
+   </section>
+
+   <section class="skills" id="skills">
+      <h2 class="heading">My <span>Skills</span></h2>
+
+      <div class="skills-container">
+         <div class="skill-box">
+               <i class="fa-solid fa-code"></i>
+               <h4>Coding</h4>
+               <div class="tools-logos">
+                  <img src="python-5.svg" alt="Python">
+                  <img src="psql.png" alt="SQL">
+                  <img src="r-lang.svg" alt="R">
+                  <img src="sas.jpg" alt="SAS">
+                  <img src="ml.jpg" alt="Machine Learning">
+            </div>
+         </div>
+
+         <div class="skill-box">
+            <i class="fa-solid fa-chart-line"></i>
+            <h4>Visualization</h4>
+            <div class="tools-logos">
+               <img src="exc.svg" alt="Excel">
+               <img src="pbi.svg" alt="Power BI">
+               <img src="powerpoint-2.svg" alt="Power Point">
+               <img src="figma-icon.svg" alt="Figma">
+               <img src="mat.svg" alt="Matplotlib">
+               <img src="stream.svg" alt="Streamlit">
+            </div>
+         </div>
+
+         <div class="skill-box">
+            <i class="fa-solid fa-chart-line"></i>
+            <h4>AI & Cloud & Big data</h4>
+            <div class="tools-logos">
+               <img src="azure-2.svg" alt="Azure">
+               <img src="spark.png" alt="Apache Spark">
+               <img src="cgpt.png" alt="Chat GPT">
+               <img src="git-icon.svg" alt="Git">
+               <img src="github-icon-2.svg" alt="Github">
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <section class="projects" id="projects">
+      <h2 class="heading">MY <span>Projects</span></h2>
+      <div class="projects-box">
+
+         <div class="project-card">
+            <img src="Dashboard (1).png" alt="">
+            <h3>Customer Churn Analysis</h3>
+            <p>This project focuses on analyzing customer churn patterns,
+               visualizing key insights, and predicting potential churners among new joiners.
+               It combines SQL-based data cleaning, Power BI dashboards,
+               and a machine learning model to deliver both descriptive and predictive insights.</p>
+               <a href="https://github.com/ZiadAbdallbasset1/Customer-Churn-Analysis" 
+                  class="btn" 
+                  target="_blank" 
+                  rel="noopener noreferrer">
+                  View Project
+               </a>
+         </div>
+
+                  <div class="project-card">
+            <img src="spo.jpg" alt="">
+            <h3>Spotify songs Analysis</h3>
+            <p>🎧 Spotify Songs Dashboard (Power BI)
+An interactive Power BI dashboard analyzing over 780 songs and 330+ artists from Spotify.
+It explores trends in album types, explicit vs. clean songs, yearly popularity (2023–2024), and top-performing artists like Taylor Swift, Drake, and Bad Bunny.
+</p>
+               <a href="https://github.com/ZiadAbdallbasset1/spotify" 
+                  class="btn" 
+                  target="_blank" 
+                  rel="noopener noreferrer">
+                  View Project
+               </a>
+         </div>
+
+         <div class="project-card">
+            <img src="Dashboard.png" alt="">
+            <h3>Marketing Campaigns Performance</h3>
+            <p>This project analyzes and visualizes the performance of various marketing campaigns,
+               providing insights into spending, revenue, ROI, and campaign effectiveness
+               across multiple regions and channels. The dashboard offers a clear,
+               interactive view for data-driven decision-making in marketing strategy.</p>
+               <a href="https://github.com/ZiadAbdallbasset1/Marketing-Campaigns-Performance" 
+                  class="btn" 
+                  target="_blank" 
+                  rel="noopener noreferrer">
+                  View Project
+               </a>
+         </div>
+
+         <div class="project-card">
+            <img src="rfmm.jpg" alt="">
+            <h3>RFM Analysis</h3>
+            <p>This project applies RFM (Recency, Frequency, Monetary)
+               analysis to segment customers based on their purchasing behavior.
+               RFM is a proven marketing technique that helps identify high-value customers,
+               potential churn risks, and opportunities for targeted marketing campaigns.</p>
+               <a href="https://github.com/ZiadAbdallbasset1/RFM" 
+                  class="btn" 
+                  target="_blank" 
+                  rel="noopener noreferrer">
+                  View Project
+               </a>
+         </div>
+
+
+         <div class="project-card">
+            <img src="bnb.jpg" alt="">
+            <h3>AirBnb Analysis</h3>
+            <p>This project analyzes Airbnb listings across Europe to uncover trends,
+               pricing patterns, and market insights. By leveraging data analytics and visualization tools,
+               the study helps identify factors influencing rental prices and availability.</p>
+               <a href="https://github.com/ZiadAbdallbasset1/AirBnb-Europe" 
+                  class="btn" 
+                  target="_blank" 
+                  rel="noopener noreferrer">
+                  View Project
+               </a>
+         </div>
+
+         <div class="project-card">
+            <img src="Screenshot (39).png" alt="">
+            <h3>Olist Sales Analysis</h3>
+            <p>This project focuses on analyzing supermarket sales data using Power BI
+               to generate actionable business insights. The process began with comprehensive data cleaning
+               in Power Query, ensuring the dataset was accurate.
+               </p>
+               <a href="https://github.com/ZiadAbdallbasset1/Olist-Sales" 
+                  class="btn" 
+                  target="_blank" 
+                  rel="noopener noreferrer">
+                  View Project
+               </a>
+         </div>
+
+         
+      </div>
+   </section>
+
+   <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+
+      <form action="https://formspree.io/f/xwpwdqpw" method="POST">
+      <div class="input-group">
+         <div class="input-box">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+         </div>
+         <div class="input-box">
+            <input type="number" name="phone" placeholder="Phone Number">
+            <input type="text" name="subject" placeholder="Subject">
+         </div>
+      </div>
+
+      <div class="input-group-2">
+         <textarea name="message" placeholder="Your Message" required></textarea>
+         <input type="submit" value="Send Message" class="btn">
+      </div>
+      </form>
+
+      </div>
+   </section>
+
+   <footer class="footer">
+         <div class="social-icons">
+            <a href="https://www.linkedin.com/in/ziad-abdallbasset" target="_blank" rel="noopener noreferrer">
+                <i class="bx bxl-linkedin-square"></i>
+            </a>
+
+            <a href="https://github.com/ZiadAbdallbasset1" target="_blank" rel="noopener noreferrer">
+               <i class="bx bxl-github"></i>
+            </a>
+
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ziadabdallbasset123@gmail.com" target="_blank" rel="noopener noreferrer">
+               <i class="bx bxl-gmail"></i>
+            </a>
+
+            <a href="https://wa.me/201101802846" target="_blank" rel="noopener noreferrer">
+               <i class="bx bxl-whatsapp"></i>
+            </a>
+         </div>
+
+         <ul class="list">
+            <li>
+               <a href="#">FAQ</a>
+            </li>
+         </ul>
+
+         <p>&copy; 2024 DataByte. All rights reserved.</p>
+   </footer>
+
+
+
+    <script src="script.js"></script>
+
+    ...
+   <form action="https://formspree.io/f/xwpwdqpw" method="POST">
+   <!-- محتوى الفورم هنا -->
+   </form>
+
+   <script>
+   const form = document.querySelector("form");
+
+   form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+      const response = await fetch(form.action, {
+         method: form.method,
+         body: formData,
+         headers: { Accept: "application/json" },
+      });
+
+      if (response.ok) {
+         alert("✅ تم إرسال الرسالة بنجاح!");
+         form.reset();
+      } else {
+         alert("❌ حدث خطأ أثناء إرسال الرسالة. حاول مرة أخرى.");
+      }
+   });
+   </script>
+
+
+  </body>
+</html>
