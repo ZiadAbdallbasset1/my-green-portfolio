@@ -29,7 +29,7 @@ Custom Stars Background animation (light particles behind the astronaut).
 Downloadable CV: A working link to my updated CV (cvf5.pdf).
 
 Deployed on Netlify for public access:
-🔗 https://ziadabdallbassetpor.netlify.app/
+🔗 https://ziadabdallbassetportfolio.netlify.app/
 
 🧠 Technical Details
 
